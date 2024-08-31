@@ -17,6 +17,8 @@ body {
     font-family: "Poppins";
     width: 100%;
     min-height: 100dvb;
+    max-width: 1440px;
+    margin: 0 auto;
 }
 
 .hero {
@@ -53,10 +55,15 @@ body {
     left: 20%;
 }
 .hero_img img {
-    min-width: 450px;
-    max-width: 400px;
+    min-width: 250px;
+    max-width: 300px;
     box-shadow: 37px 41px 0px 0px #FBEFF4;
-
+}
+@media (max-width: 768px) {
+    .hero_img img {
+        min-width: 200px;
+        max-width: 250px;
+    }
 }
 .hero_right {
     width: 55%;
